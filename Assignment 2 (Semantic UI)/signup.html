@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+  <title>Arasaka | Sign Up</title>
+  <link href="css/signup.css" rel="stylesheet">
+</head>
+
+<body class="ui inverted segment">
+  <div class="ui form">
+    <div class="ui stackable grid container">
+      <header class = "sixteen wide column">
+        <div class="four wide column">
+          <figure>
+            <img src="https://sm.ign.com/t/ign_es/screenshot/default/arasaka-logotype-red_wdff.1080.png" alt = "Arasaka" class = "ui medium fluid image">
+          </figure>    
+        </div>
+      </header>
+      <main  class= "ui row">
+        <section class="ui twelve wide column">  
+          <h2>Create your Arasaka Account</h2>
+          <form action="registered.html" method="get" id = "booking" class="ui form">
+            <div class="required two fields">
+              <div class="field">
+                <label>First Name</label>
+                <input placeholder="First Name" type="text" required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*" title="Please enter a valid name">
+              </div>
+              <div class="field">
+                <label>Last Name</label>
+                <input placeholder="Last Name" type="text" required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*" title="Please enter a valid name">
+              </div>
+            </div>
+            <div class = "required field">
+              <label for="email" class="three wide field">Email Address</label>
+              <input type="email" name="email" id="email" class="eight wide field" required pattern = "[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})" title="Please enter a valid email" placeholder="arasaka@gmail.com">
+            </div>
+            <p>Do you value the Arasaka Corporation?</p>
+            <div class="grouped fields">
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="radio" id = "yes" value = "yes" tabindex="0" class="hidden">
+                  <label for="yes">Yes</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="radio" id = "no" value = "no" tabindex="0" class="hidden">
+                  <label for="no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class = "required field">
+              <label for="age" class="three wide field">Age</label>
+              <input type="number" name="age" id="age" min="17" max="80" class="eight wide field" required title="Please enter a valid age" placeholder="17-80">
+            </div>
+            <div class=" required two fields">
+              <div class="field">
+                <label>Password</label>
+                <input placeholder="Password" type="text" required pattern = "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,}$" title="Please enter a password">
+              </div>
+              <div class="field">
+                <label>Confirm</label>
+                <input placeholder="Confirm Password" type="text" required pattern = "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,}$" title="Please confirm your password">
+              </div>
+            </div>
+            <div class="required inline field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden" required title="Please agree to the terms and conditions">
+                <label>I agree to the terms and conditions</label>
+              </div>
+            </div>
+            <button class="ui red button" type = "submit">Submit</button>
+            <button class="ui red button" type = "reset">Clear the Info</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+    crossorigin="anonymous">
+  </script>
+  <script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+  
+  <!--Java to activate a checkbox-->
+  <!--Reference: https://semantic-ui.com/modules/checkbox.html-->
+  <script>
+    $('.ui.checkbox').checkbox(); 
+  </script>
+</body>
+</html>

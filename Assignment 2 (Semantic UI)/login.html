@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+  <title>Arasaka | Login</title>
+  <link href="css/signup.css" rel="stylesheet">
+</head>
+
+<body class="ui inverted segment">
+  <form action="index.html">
+    <div class="ui form">
+      <div class="ui stackable middle aligned center aligned grid container">
+        <header class = "sixteen wide column">
+          <div class="four wide column">
+            <figure>
+              <img src="https://sm.ign.com/t/ign_es/screenshot/default/arasaka-logotype-red_wdff.1080.png" alt = "Arasaka" class = "ui medium fluid image">
+            </figure>
+          </div>
+        </header>
+        
+        <main  class= "ui row">
+          <section class="ui twelve wide column">  
+            <h2>Arasaka Login</h2>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user icon"></i>
+                <input type="email" name="email" id="email" class="eight wide field" required pattern = "[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})" title="Please enter a valid email" placeholder="Email">
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="lock icon"></i>
+                <input placeholder="Password" type="text" required pattern = "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,}$" title="Please enter a password">
+              </div>
+            </div>
+            <button class="ui fluid red button" type = "submit">Login</button>
+          </section>
+        </main>
+      </div>
+    </div>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+    crossorigin="anonymous">
+  </script>
+  <script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+</body>
+</html>

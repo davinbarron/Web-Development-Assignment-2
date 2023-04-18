@@ -1,0 +1,30 @@
+html, body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ui.container {
+    border: solid black 1px;
+	margin-top:2em;
+}
+	
+h1, h2, figcaption, label {
+	color: red;
+}
+	
+.ui.form .inline.field > label, .ui.form .field  label, p {
+	color: red;
+	font-size:1.1em;
+}
+
+figcaption {
+	text-align:center;
+    font-weight:bold;
+	text-transform:uppercase;
+}
+
+#booking input:invalid {
+    border:solid red 1px;
+}
+
+#booking input:valid {
+    border:solid green 1px;
+}
